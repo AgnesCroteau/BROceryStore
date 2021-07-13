@@ -12,6 +12,6 @@
     <p>'' Do you come here often? '' he said.</p>
     <p>'' Always! '' I answered, trying to look honest.  It was the first time I'd actually come accross the Computer section. I was completely lost.</p>
     <p> Later on, I realized loving him was in my <abbr title="Deoxyribonucleic acid">DNA</abbr>. </p>
-    <p><abbr title="Mister">Mr.</abbr> BOB, boy were you hot.</p>
+    <p><abbr title="Mister">Mr.</abbr> BOB, boy were you hot. CHEEEEEEEEESYYYYYYYYY!</p>
   </body>
 </html>

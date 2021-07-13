@@ -9,7 +9,7 @@
      make sure you get the big, complete version and not the puny one... Take the one with the audio CDs included, you'll thank me later! 
      (As I thanked Big Sis just a tiny bit earlier today ;)
 
-    Last but not least, many thanks to any Bulgarian in my surroundings who are willing to help me, with their patience and knowledge of the language.
+    Last but not least, many thanks to any Bulgarian in my surroundings who is willing to help me, with their patience and knowledge of the language.
     <b>Dre D.</b>, I'm looking your way! As for you, <b>Timousse</b>, your <i>"pet pile"</i> makes me laugh everytime... you deserve your name in my
      <b>THANK YOU</b> 
     list because without you, this website would have never existed, ever, and that's the truth! 
