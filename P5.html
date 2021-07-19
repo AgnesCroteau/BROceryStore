@@ -1,11 +1,37 @@
 <!DOCTYPE html>
-<!Commenting: this is P5, a User Login Page>
-<!Literature reference : DUCKETT, J., HTML & CSS design and build websites, John Wiley & sons, inc. p. 152-171>
-<html>
+<!--Commenting: this is P5, a User Login Page-->
+<!--Literature reference : DUCKETT, J., HTML & CSS design and build websites, John Wiley & sons, inc. p. 152-171, p.325-->
+<html lang="en" dir="ltr">
     <head>
+      <meta charset="utf-8">
         <title> User Login Page </title>
-    </head>
+        <style type="text/css">
+    
+    body{
+     background-color: rgb(1, 39, 11) ; 
+     font-family: 'Trebuchet MS';
+     letter-spacing: 2.5em;
+     color: rgb(140, 235, 163);
+
+    }
+    form { 
+      
+      padding:300px;
+      text-align:center;
+      align:center;
+      font-family: 'Trebuchet MS';
+      letter-spacing: normal;
+      background-color: rgb(1, 63, 63);}
+      
+    legend, p {
+      color: rgb(235, 243, 238); }
+
+     
+
+      </style>
+      </head>
 <body>
+  <h1>FroggyFoods</h1>
     <form action="login"> <!-- This page does not exist yet. -->
       <fieldset>
         <legend> User Login Page</legend>
@@ -14,7 +40,7 @@
         maxlength="100" />
       </p> 
       <p>Password: 
-        <input type="text" name="Password" size="26"
+        <input type="password" name="Password" size="26"
         maxlength="100" />
       </p> 
     

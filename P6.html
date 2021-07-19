@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!--Commenting: this is P6, a User Login Page-->
+<!--Literature reference : DUCKETT, J., HTML & CSS design and build websites, John Wiley & sons, inc. p. 152-171, p.325-->
+<html lang="en" dir="ltr">
+    <head>
+      <meta charset="utf-8">
+        <title> User Login Page </title>
+        <style type="text/css">
+    
+    body{
+     background-color: rgb(1, 39, 11) ; 
+     font-family: 'Trebuchet MS';
+     letter-spacing: 2.5em;
+     color: rgb(140, 235, 163);
+
+    }
+    form { 
+      
+      padding:300px;
+      text-align:center;
+      align:center;
+      font-family: 'Trebuchet MS';
+      letter-spacing: normal;
+      background-color: rgb(1, 63, 63);}
+      
+    legend, p {
+      color: rgb(235, 243, 238); }
+
+     
+
+      </style>
+      </head>
+<body>
+  <h1>FroggyFoods</h1>
+    <form action="login"> <!-- This page does not exist yet. -->
+      <fieldset>
+        <legend> User Information</legend>
+
+     <p>First Name:
+         <input id="firstname" type="text" name="lastname" size="25" placeholder="First name" required
+         maxlength="100" />
+        </p> 
+
+     <p>Last Name:
+        <input id="lastname" type="text" name="lastname" size="25" placeholder="Last name" required
+        maxlength="100" />
+        </p> 
+
+      <p>Email:    
+        <input type="text" name="Email" size="30" placeholder="Email" required
+        maxlength="100" />
+      </p> 
+
+      <p>Password: 
+        <input type="password" name="Password" size="26" placeholder="Password" required
+        maxlength="100" />
+      </p> 
+
+      <p>Confirmation: 
+        <input type="password" name="PasswordConfirmation" size="22" placeholder="Password Confirmation" required
+        maxlength="100" />
+      </p> 
+
+      <p>Postal Code: 
+        <input type="text" name="PostalCode" size="22" placeholder="Postal Code" optional
+        maxlength="100" />
+        
+     <p>Personal: 
+        <input id="personal" type="radio" name="Personal"  />
+        Business : <input id="business" type="radio" name="Business"  />
+      </p> 
+   </br>
+    
+        <input type="submit" value="Submit" />
+        <input type="reset" value="Reset" />
+
+
+
+     </fieldset>
+    </form> 
+</body>
+</html>
