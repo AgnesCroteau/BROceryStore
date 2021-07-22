@@ -1,0 +1,168 @@
+
+    
+    body{
+        background-color: rgb(1, 39, 11) ; 
+        font-family: 'Trebuchet MS';
+       
+        color: #fff;
+   
+       }
+       form { 
+         
+         padding:300px;
+         text-align:center;
+         font-family: 'Trebuchet MS';
+         letter-spacing: normal;
+         background-color: #fff;
+         background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 1000'%3E%3Cg %3E%3Ccircle fill='%23fcfffa' cx='50' cy='0' r='50'/%3E%3Cg fill='%23f9fef6' %3E%3Ccircle cx='0' cy='50' r='50'/%3E%3Ccircle cx='100' cy='50' r='50'/%3E%3C/g%3E%3Ccircle fill='%23f7fdf3' cx='50' cy='100' r='50'/%3E%3Cg fill='%23f4fdef' %3E%3Ccircle cx='0' cy='150' r='50'/%3E%3Ccircle cx='100' cy='150' r='50'/%3E%3C/g%3E%3Ccircle fill='%23f1fcec' cx='50' cy='200' r='50'/%3E%3Cg fill='%23edfbe9' %3E%3Ccircle cx='0' cy='250' r='50'/%3E%3Ccircle cx='100' cy='250' r='50'/%3E%3C/g%3E%3Ccircle fill='%23eafbe6' cx='50' cy='300' r='50'/%3E%3Cg fill='%23e7fae2' %3E%3Ccircle cx='0' cy='350' r='50'/%3E%3Ccircle cx='100' cy='350' r='50'/%3E%3C/g%3E%3Ccircle fill='%23e3f9df' cx='50' cy='400' r='50'/%3E%3Cg fill='%23e0f9dc' %3E%3Ccircle cx='0' cy='450' r='50'/%3E%3Ccircle cx='100' cy='450' r='50'/%3E%3C/g%3E%3Ccircle fill='%23dcf8d9' cx='50' cy='500' r='50'/%3E%3Cg fill='%23d8f7d7' %3E%3Ccircle cx='0' cy='550' r='50'/%3E%3Ccircle cx='100' cy='550' r='50'/%3E%3C/g%3E%3Ccircle fill='%23d5f7d4' cx='50' cy='600' r='50'/%3E%3Cg fill='%23d1f6d1' %3E%3Ccircle cx='0' cy='650' r='50'/%3E%3Ccircle cx='100' cy='650' r='50'/%3E%3C/g%3E%3Ccircle fill='%23ccf6cf' cx='50' cy='700' r='50'/%3E%3Cg fill='%23c8f5cc' %3E%3Ccircle cx='0' cy='750' r='50'/%3E%3Ccircle cx='100' cy='750' r='50'/%3E%3C/g%3E%3Ccircle fill='%23c4f4ca' cx='50' cy='800' r='50'/%3E%3Cg fill='%23bff4c7' %3E%3Ccircle cx='0' cy='850' r='50'/%3E%3Ccircle cx='100' cy='850' r='50'/%3E%3C/g%3E%3Ccircle fill='%23bbf3c5' cx='50' cy='900' r='50'/%3E%3Cg fill='%23b6f3c3' %3E%3Ccircle cx='0' cy='950' r='50'/%3E%3Ccircle cx='100' cy='950' r='50'/%3E%3C/g%3E%3Ccircle fill='%23b1f2c1' cx='50' cy='1000' r='50'/%3E%3C/g%3E%3C/svg%3E");
+         background-attachment: fixed;
+         background-size: contain;
+         /*
+           background made with SVGBackgrounds.com and free personal with credit 
+         */}
+   
+       .container { 
+   
+       padding:100px;
+       font-family: 'Trebuchet MS';
+       font-size: 24px;
+       letter-spacing: normal;
+       color:rgb(1, 39, 11);
+       text-align: center;
+       background-color: #fff;
+       background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 1000'%3E%3Cg %3E%3Ccircle fill='%23fcfffa' cx='50' cy='0' r='50'/%3E%3Cg fill='%23f9fef6' %3E%3Ccircle cx='0' cy='50' r='50'/%3E%3Ccircle cx='100' cy='50' r='50'/%3E%3C/g%3E%3Ccircle fill='%23f7fdf3' cx='50' cy='100' r='50'/%3E%3Cg fill='%23f4fdef' %3E%3Ccircle cx='0' cy='150' r='50'/%3E%3Ccircle cx='100' cy='150' r='50'/%3E%3C/g%3E%3Ccircle fill='%23f1fcec' cx='50' cy='200' r='50'/%3E%3Cg fill='%23edfbe9' %3E%3Ccircle cx='0' cy='250' r='50'/%3E%3Ccircle cx='100' cy='250' r='50'/%3E%3C/g%3E%3Ccircle fill='%23eafbe6' cx='50' cy='300' r='50'/%3E%3Cg fill='%23e7fae2' %3E%3Ccircle cx='0' cy='350' r='50'/%3E%3Ccircle cx='100' cy='350' r='50'/%3E%3C/g%3E%3Ccircle fill='%23e3f9df' cx='50' cy='400' r='50'/%3E%3Cg fill='%23e0f9dc' %3E%3Ccircle cx='0' cy='450' r='50'/%3E%3Ccircle cx='100' cy='450' r='50'/%3E%3C/g%3E%3Ccircle fill='%23dcf8d9' cx='50' cy='500' r='50'/%3E%3Cg fill='%23d8f7d7' %3E%3Ccircle cx='0' cy='550' r='50'/%3E%3Ccircle cx='100' cy='550' r='50'/%3E%3C/g%3E%3Ccircle fill='%23d5f7d4' cx='50' cy='600' r='50'/%3E%3Cg fill='%23d1f6d1' %3E%3Ccircle cx='0' cy='650' r='50'/%3E%3Ccircle cx='100' cy='650' r='50'/%3E%3C/g%3E%3Ccircle fill='%23ccf6cf' cx='50' cy='700' r='50'/%3E%3Cg fill='%23c8f5cc' %3E%3Ccircle cx='0' cy='750' r='50'/%3E%3Ccircle cx='100' cy='750' r='50'/%3E%3C/g%3E%3Ccircle fill='%23c4f4ca' cx='50' cy='800' r='50'/%3E%3Cg fill='%23bff4c7' %3E%3Ccircle cx='0' cy='850' r='50'/%3E%3Ccircle cx='100' cy='850' r='50'/%3E%3C/g%3E%3Ccircle fill='%23bbf3c5' cx='50' cy='900' r='50'/%3E%3Cg fill='%23b6f3c3' %3E%3Ccircle cx='0' cy='950' r='50'/%3E%3Ccircle cx='100' cy='950' r='50'/%3E%3C/g%3E%3Ccircle fill='%23b1f2c1' cx='50' cy='1000' r='50'/%3E%3C/g%3E%3C/svg%3E");
+       background-attachment: fixed;
+       background-size: contain;
+       /*
+           background made with SVGBackgrounds.com and free personal with credit 
+       */  
+   }
+         
+       legend, p {
+         color: rgb(1, 39, 11); }
+   
+     /*
+      Following : From Teammate Anes ....
+     */
+   
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap%27');
+   *{
+     box-sizing: border-box;
+     padding: 0;
+     margin: 0;
+   }
+   body{
+     font-family: 'Open Sans', sans-serif;
+     background: #fff;
+     color: #333;
+     line-height: 1.6;
+     background-color: #fff;
+     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 1000'%3E%3Cg %3E%3Ccircle fill='%23fcfffa' cx='50' cy='0' r='50'/%3E%3Cg fill='%23f9fef6' %3E%3Ccircle cx='0' cy='50' r='50'/%3E%3Ccircle cx='100' cy='50' r='50'/%3E%3C/g%3E%3Ccircle fill='%23f7fdf3' cx='50' cy='100' r='50'/%3E%3Cg fill='%23f4fdef' %3E%3Ccircle cx='0' cy='150' r='50'/%3E%3Ccircle cx='100' cy='150' r='50'/%3E%3C/g%3E%3Ccircle fill='%23f1fcec' cx='50' cy='200' r='50'/%3E%3Cg fill='%23edfbe9' %3E%3Ccircle cx='0' cy='250' r='50'/%3E%3Ccircle cx='100' cy='250' r='50'/%3E%3C/g%3E%3Ccircle fill='%23eafbe6' cx='50' cy='300' r='50'/%3E%3Cg fill='%23e7fae2' %3E%3Ccircle cx='0' cy='350' r='50'/%3E%3Ccircle cx='100' cy='350' r='50'/%3E%3C/g%3E%3Ccircle fill='%23e3f9df' cx='50' cy='400' r='50'/%3E%3Cg fill='%23e0f9dc' %3E%3Ccircle cx='0' cy='450' r='50'/%3E%3Ccircle cx='100' cy='450' r='50'/%3E%3C/g%3E%3Ccircle fill='%23dcf8d9' cx='50' cy='500' r='50'/%3E%3Cg fill='%23d8f7d7' %3E%3Ccircle cx='0' cy='550' r='50'/%3E%3Ccircle cx='100' cy='550' r='50'/%3E%3C/g%3E%3Ccircle fill='%23d5f7d4' cx='50' cy='600' r='50'/%3E%3Cg fill='%23d1f6d1' %3E%3Ccircle cx='0' cy='650' r='50'/%3E%3Ccircle cx='100' cy='650' r='50'/%3E%3C/g%3E%3Ccircle fill='%23ccf6cf' cx='50' cy='700' r='50'/%3E%3Cg fill='%23c8f5cc' %3E%3Ccircle cx='0' cy='750' r='50'/%3E%3Ccircle cx='100' cy='750' r='50'/%3E%3C/g%3E%3Ccircle fill='%23c4f4ca' cx='50' cy='800' r='50'/%3E%3Cg fill='%23bff4c7' %3E%3Ccircle cx='0' cy='850' r='50'/%3E%3Ccircle cx='100' cy='850' r='50'/%3E%3C/g%3E%3Ccircle fill='%23bbf3c5' cx='50' cy='900' r='50'/%3E%3Cg fill='%23b6f3c3' %3E%3Ccircle cx='0' cy='950' r='50'/%3E%3Ccircle cx='100' cy='950' r='50'/%3E%3C/g%3E%3Ccircle fill='%23b1f2c1' cx='50' cy='1000' r='50'/%3E%3C/g%3E%3C/svg%3E");
+     background-attachment: fixed;
+     background-size: contain;
+   }
+   ul{
+     list-style: none;
+   }
+   
+   a{
+     color: #333;
+     text-decoration: none;
+   }
+   h1,h2{
+     font-weight: 300;
+     line-height: 1.2;
+   }
+   p{
+     margin: 10px;
+   }
+   img{
+     width: 100%;
+   }
+   
+   /*
+           NAVBAR - From Teammate Anes...
+       */
+   
+   .navbar{
+   
+     display: flex;
+     align-items: center;
+     justify-content:space-between;
+     background-color: #333;
+     color: #fff;
+     opacity: 0.8;
+     width: 100%;
+     height: 70px;
+     position: fixed;
+     top: 0px;
+     padding: 0 30px;
+     transition: 0.5s;
+     }
+   
+     .navbar.top {
+       background: transparent;
+     }
+   
+     .navbar a{
+       color: #fff;
+       padding: 10px 20px;
+       margin: 0 5px;
+     }
+     .navbar a:hover{
+       border-bottom:#28a745 2px solid;
+     }
+   
+     .navbar ul{
+       display: flex;
+     }
+     .navbar .logo{
+       font-weight: 400;
+     }
+   
+   /*
+           HEADER - From Teammate Anes...
+       */
+   
+   .hero{
+       background: url('./Images/hamburg-st--pauli_street-food-market_c_-marketing-hamburg-de_marius-roeer.jpeg') no-repeat center center/cover;
+       height: 100vh;
+       position: relative;
+       color: #fff;
+     }
+     .hero .content{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+       text-align: center;
+       height: 100%;
+       padding: 0 20px;
+     }
+     .hero .content h1{
+       font-size: 55px;
+     }
+     .hero .content p{
+       font-size: 23px;
+       max-width: 600px;
+       margin: 20px 0 30px;
+     }
+   
+     .hero::before{
+       content: '';
+       position: absolute;
+       top: 0;
+       left: 0;
+       width: 100%;
+       height: 100%;
+       background: rgba(0, 0, 0, 0.6);
+     }
+   
+     .hero *{
+       z-index: 10;
+     }
+     .hero.blog{
+       background: url('./Images/home/blog.jpg') no-repeat center center/cover;
+       height: 30vh;
+     }
+   

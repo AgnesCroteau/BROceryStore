@@ -1,39 +1,47 @@
 <!DOCTYPE html>
 <!--Commenting: this is P5, a User Login Page-->
 <!--Literature reference : DUCKETT, J., HTML & CSS design and build websites, John Wiley & sons, inc. p. 423-424-->
+
+
 <html lang="en" dir="ltr">
     <head>
       <meta charset="utf-8">
-        <title> User Login Page </title>
-        <style type="text/css">
-    
-    body{
+        <title> Seafood aisle </title>
 
-     background-color: rgb(1, 39, 11) ; 
-     font-family: 'Trebuchet MS';
-     letter-spacing: 2.5em;
-     color: rgb(140, 235, 163);}
-
-    .container { 
-      
-      padding:100px;
-      font-family: 'Trebuchet MS';
-      font-size: 24px;
-      letter-spacing: normal;
-      background-color: rgb(1, 63, 63);
-      color:azure;
-      text-align: center;}
-      
-    h2 {
-      color: rgb(140, 235, 163);
-      text-align: center; }
-
-      </style>
+        <!--    CSS Link     -->
+        <link rel="stylesheet" href="AgnesCroteau_P2.css">
+        <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+          integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="./utilities.css">
       </head>
 
+      <!--From Teammate Anes: BEGINNING-->
 
+        <header class="hero">
+          <div id="navbar" class="navbar top">
+            <h1 class="logo">
+              <span class="text-primary"><i class="fas fa-frog"></i> Froggy</span>Foods
+            </h1>
+            <nav>
+              <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="#">Sign Up</a></li>
+              </ul>
+            </nav>
+          </div>
+         
+        </header>
+
+        <!---From Teammate Anes : END-->
 <body>
-  <h1>FroggyFoods</h1>
+
+  <!---My Own Code -->
+
+  <div class ="seafood-header"> <h1></h1> </div>
     <div class="container">
       <h2>SEAFOOD </h2>
       <hr>
@@ -41,10 +49,10 @@
 
         <div class="entry">
         <figure>
-        <img src="Images/Fish.png" 
+        <img src="Images/Fish2.jpeg" 
         alt="Fish"
-        title="Fish" width="1200" height="750" />
-        <figcaption>ATOMIC FISH    |    100% ORGANIC </figcaption>
+        title="Fish" width="1200" height="900" />
+        <figcaption>ATOMIC FISH    |    100% ORGANIC  | *** OUT OF STOCK DUE TO COVID ***</figcaption>
         <br><br>
         </figure>
         </div>
@@ -53,7 +61,7 @@
         <figure>
         <img src="Images/Lobster.png" 
         alt="Lobster"
-        title="Lobster" width="1200" height="750" />
+        title="Lobster" width="1200" height="900" />
         <figcaption>MAGIC LOBSTER    |    100% ORGANIC</figcaption>
         <br><br>
         </figure>
@@ -61,14 +69,65 @@
 
         <div class="entry">
         <figure>
-        <img src="Images/Oysters.png" 
+        <img src="Images/ooysters.jpeg" 
         alt="Oysters"
-        title="Oysters" width="1200" height="750" />
-        <figcaption>FANTASTIC OYSTERS    |    100% ORGANIC</figcaption>
+        title="Oysters" width="1200" height="900" />
+        <figcaption>FANTASTIC OYSTERS    |    100% ORGANIC  | *** OUT OF STOCK DUE TO COVID ***</figcaption>
         <br><br>
         </figure>
         </div>
       
-    </div> 
+   </div> 
+
+    <!--From teammate : Anes (until end of script)-->
+
+    <footer class="footer bg-dark">
+      <div class="social">
+        <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+        <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+        <a href="#"><i class="fab fa-youtube fa-2x"></i></a>
+        <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+      </div>
+      <p>Copyright &copy; 2021- FroggyFoods</p>
+    
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+    </script>
+    <script>
+      const navbar = document.getElementById('navbar');
+      let scrolled=false;
+      
+      window.onscroll= function() {
+        if(window.pageYOffset > 100) {
+          navbar.classList.remove('top');
+          if(!scrolled){
+            navbar.style.transform= 'translateY(-70px)';
+          } setTimeout(function() {
+            navbar.style.transform= 'translateY(0)';
+            scrolled=true;
+          }, 200);
+        } else{
+          navbar.classList.add('top')
+          scrolled=false;
+        }
+      };
+      // Smooth Scrolling
+
+      $('#navbar a, .btn').on('click', function (e) {
+            if (this.hash !== '') {
+              e.preventDefault();
+    
+              const hash = this.hash;
+    
+              $('html, body').animate(
+                {
+                  scrollTop: $(hash).offset().top - 100,
+                },
+                800
+              );
+            }
+          });
+      
+    </script>
 </body>
 </html>

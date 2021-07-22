@@ -1,82 +1,164 @@
 <!DOCTYPE html>
-<!--Commenting: this is P6, a User Login Page-->
+<!--Commenting: this is P5, a User Login Page-->
 <!--Literature reference : DUCKETT, J., HTML & CSS design and build websites, John Wiley & sons, inc. p. 152-171, p.325-->
+
 <html lang="en" dir="ltr">
     <head>
       <meta charset="utf-8">
         <title> User Login Page </title>
-        <style type="text/css">
+
+        <!--    CSS Link     -->
+        <link rel="stylesheet" href="AgnesCroteau_P6.css">
+        <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="./utilities.css">
+        
     
-    body{
-     background-color: rgb(1, 39, 11) ; 
-     font-family: 'Trebuchet MS';
-     letter-spacing: 2.5em;
-     color: rgb(140, 235, 163);
 
-    }
-    form { 
-      
-      padding:300px;
-      text-align:center;
-      align:center;
-      font-family: 'Trebuchet MS';
-      letter-spacing: normal;
-      background-color: rgb(1, 63, 63);}
-      
-    legend, p {
-      color: rgb(235, 243, 238); }
-
-     
-
-      </style>
       </head>
-<body>
-  <h1>FroggyFoods</h1>
-    <form action="login"> <!-- This page does not exist yet. -->
-      <fieldset>
-        <legend> User Information</legend>
 
-     <p>First Name:
-         <input id="firstname" type="text" name="lastname" size="25" placeholder="First name" required
+
+
+<body>
+
+    <!--From Teammate Anes : header-->
+
+    <header class="hero">
+      <div id="navbar" class="navbar top">
+        <h1 class="logo">
+          <span class="text-primary"><i class="fas fa-frog"></i> Froggy</span>Foods
+        </h1>
+       
+      </div>
+      <div class="content">
+      
+        <!--<a href="#about" class="btn"><i class="fas fa-chevron-right"></i>Shop Local</a> : not needed here-->
+      </div>
+    </header>
+  
+    
+
+  <!-- Nav bar from Anes -->
+
+  <div id="navbar" class="navbar top">
+    <h1 class="logo">
+      <span class="text-primary"><i class="fas fa-frog"></i> Froggy</span>Foods
+    </h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html">About Us</a></li>
+        <li><a href="cart.html">Cart</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+
+  <!--My Own Code-->
+
+ 
+
+
+       <!--From teammate : Anes (until end of script)-->
+
+      
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+      </script>
+      <script>
+        const navbar = document.getElementById('navbar');
+        let scrolled=false;
+        
+        window.onscroll= function() {
+          if(window.pageYOffset > 100) {
+            navbar.classList.remove('top');
+            if(!scrolled){
+              navbar.style.transform= 'translateY(-70px)';
+            } setTimeout(function() {
+              navbar.style.transform= 'translateY(0)';
+              scrolled=true;
+            }, 200);
+          } else{
+            navbar.classList.add('top')
+            scrolled=false;
+          }
+        };
+        // Smooth Scrolling
+  
+        $('#navbar a, .btn').on('click', function (e) {
+              if (this.hash !== '') {
+                e.preventDefault();
+      
+                const hash = this.hash;
+      
+                $('html, body').animate(
+                  {
+                    scrollTop: $(hash).offset().top - 100,
+                  },
+                  800
+                );
+              }
+            });
+        
+      </script>
+
+
+<!-- Magic!!!! Don't touch.........-->
+  
+  <h1></h1>
+  <div class="container2">
+    <form action="login"> <!-- This page does not exist yet. -->
+     <fieldset>
+        <legend> User Information</legend>
+        <p>First Name:
+         <input id="firstname" type="text" name="firstname" size="25" placeholder="First name" required
          maxlength="100" />
         </p> 
-
-     <p>Last Name:
+        <p>Last Name:
         <input id="lastname" type="text" name="lastname" size="25" placeholder="Last name" required
         maxlength="100" />
         </p> 
-
-      <p>Email:    
+        <p>Email:    
         <input type="text" name="Email" size="30" placeholder="Email" required
         maxlength="100" />
       </p> 
-
       <p>Password: 
         <input type="password" name="Password" size="26" placeholder="Password" required
         maxlength="100" />
       </p> 
-
       <p>Confirmation: 
         <input type="password" name="PasswordConfirmation" size="22" placeholder="Password Confirmation" required
         maxlength="100" />
       </p> 
-
       <p>Postal Code: 
         <input type="text" name="PostalCode" size="22" placeholder="Postal Code" optional
         maxlength="100" />
-        
-     <p>Personal: 
+        <p>Personal: 
         <input id="personal" type="radio" name="Personal"  />
         Business : <input id="business" type="radio" name="Business"  />
       </p> 
-   </br>
-    
-        <input type="submit" value="Submit" />
-        <input type="reset" value="Reset" />
+      </br>
+      <input type="submit" value="Submit" />
+      <input type="reset" value="Reset" />
+
+      </fieldset> 
+      </form> 
+      </div> 
+
+      <!--from Anes : footer-->
+
+      <footer class="footer bg-dark">
+        <div class="social">
+          <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+          <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+          <a href="#"><i class="fab fa-youtube fa-2x"></i></a>
+          <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+        </div>
+        <p>Copyright &copy; 2021- FroggyFoods</p>
+      
+      </footer>
 
 
-
-     </fieldset>
-    </form> 
-</body>
-</html>
+    </body>
+    </html>
